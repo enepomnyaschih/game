@@ -26,7 +26,7 @@ $(function() {
     }
     
     // Иначе создаем новую мишень
-    var target = $('<div class="target" status="alive"></div>');
+    var target = $('<div class="target" status="alive"><span class="target-1"></span><span class="target-2"></span><span class="target-3"></span><span class="target-4"></span></div>');
     
     // Добавляем ее в панель
     $('.panel').append(target);
@@ -53,12 +53,7 @@ $(function() {
     // Меняем статус мишени на broken1
     target.attr('status', 'broken1');
     
-    // Запускаем таймер на 200 миллисекунд, чтобы поменять статус на broken2
-    setTimeout(function() {
-      target.attr('status', 'broken2');
-    }, 200);
-    
-    // Тут же запускаем таймер на 400 миллисекунд, чтобы удалить мишень
+    // Запускаем таймер на 400 миллисекунд, чтобы удалить мишень
     setTimeout(function() {
       target.remove();
     }, 400);

@@ -1,0 +1,30 @@
+html {
+    background: #ccc;
+}
+.game {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+    
+}
+.score-box.finished {
+	font-family: Comic Sans MS;
+	font-size: 30px;
+	margin-top: 200px;
+	text-align: center;
+}
+.panel {
+	border: 4px double black;
+	position: relative;
+	width: 400px;
+	height: 400px;
+    background: #fff;
+    cursor: crosshair;
+}
+.target {
+	position: absolute; 
+	width: 60px;
+	height: 60px;
+	background-size: cover;
+	border-radius: 50px;
+}
